@@ -27,7 +27,7 @@ export default function Home() {
           </Flex>
           </Flex>
           <Divider mt={1} mb={3} bgColor="white" />
-          <Text fontWeight={500}>I'm a student at the University of Florida pursuing a Bachelor's degree in Computer Science. I am passionate about mathematical modeling, UI design, high performance computing, cryptocurrencies, and web development. I'm proficient in object-oriented programming languages like C++, Python, and TypeScript. I've worked on various collaborative projects, fascilitating frontend interfaces, API designs, and backend development. Additionally, I've dabbled in different domains of knowledge from building query parsers, CUDA programming, and implementing various statistical methods.</Text>
+          <Text fontWeight={500}>I&apos;m a student at the University of Florida pursuing a Bachelor&apos;s degree in Computer Science. I am passionate about mathematical modeling, UI design, high performance computing, cryptocurrencies, and web development. I&apos;m proficient in object-oriented programming languages like C++, Python, and TypeScript. I&apos;ve worked on various collaborative projects, fascilitating frontend interfaces, API designs, and backend development. Additionally, I&apos;ve dabbled in different domains of knowledge from building query parsers, CUDA programming, and implementing various statistical methods.</Text>
           <Text mt={3} fontWeight={500}>My industry experience includes working as a Software Engineer at FAANG, Tech Unicorns, and F50 companies</Text>
         </Flex>
       </Flex>
