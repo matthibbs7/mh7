@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react"
+import { m } from "framer-motion"
 
 export const theme = extendTheme({
   fonts: {
@@ -8,8 +9,9 @@ export const theme = extendTheme({
     global: () => ({
         body: {
             bg: "#131313",
-            color: '#eeeeee'
+            color: '#eeeeee',
         }
+
     })
 },
 })
