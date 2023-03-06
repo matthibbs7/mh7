@@ -1,5 +1,9 @@
-import { extendTheme } from "@chakra-ui/react"
-import { m } from "framer-motion"
+import { extendTheme, type ThemeConfig } from "@chakra-ui/react"
+
+const config: ThemeConfig = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+}
 
 export const theme = extendTheme({
   fonts: {
@@ -13,5 +17,6 @@ export const theme = extendTheme({
         }
 
     })
-},
+  },
+  config
 })
