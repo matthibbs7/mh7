@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Divider, Flex, Text, Image, UnorderedList, ListItem, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { Divider, Flex, Text, Image, UnorderedList, ListItem, useColorMode, useColorModeValue, Link } from '@chakra-ui/react';
 import { FaMagic } from 'react-icons/fa'
 import Magic from '@/components/Magic';
 import { useState } from 'react';
@@ -52,33 +52,33 @@ export default function Home() {
             </Flex>
             <Text color={color} mb={3.5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>machine learning</Text>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Sherlock</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/plehman2000/Sherlock" isExternal>Sherlock</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow', textDecoration: 'none'}} textDecoration="none" as="span" fontStyle="italic"> Video analysis using OpenAI and SpaCy</Text>
             </Flex>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Sabu.ai</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/plehman2000/Sabu" isExternal>Sabu.ai</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} as="span" fontStyle="italic"> Twitter sentiment analysis aggregator using BERT transformers</Text>
             </Flex>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Haikai</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Haikai-IOS" isExternal>Haikai</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Natural language generation of Haiku poems from images</Text>
             </Flex>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Educatus</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/educatus" isExternal>Educatus</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Customizable AI powered dashboard for students</Text>
             </Flex>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Aulos</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/aulos" isExternal>Aulos</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Watch brand classification using Azure and Computer Vision</Text>
             </Flex>
             <Text color={color} mb={3.5} mt={5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>statistics</Text>
             <Flex direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>GStatSim</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://pypi.org/project/gstatsim/" isExternal>GStatSim</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Open Source Python package for geostatistical simulation and interpolation</Text>
             </Flex>
@@ -86,63 +86,54 @@ export default function Home() {
               <ListItem color={color} ml={8} style={{fontFamily: 'Barlow', textDecoration: 'none'}} fontSize="16px" lineHeight="24px" fontWeight={600} mb={3.5}>10,000+ downloads</ListItem>
             </UnorderedList>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Data Science Explorations</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Data-Science" isExternal>Data Science Explorations</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Various analysis&apos;</Text>
             </Flex>
             <Text color={color} mb={3.5} mt={5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>fullstack</Text>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Demogorgn.ai</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Data-Science" isExternal>Demogorgn.ai</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Website for simulating Greenland topography for geophysics researchers</Text>
             </Flex>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Referme.fyi (deprecated)</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Referme.fyi" isExternal>Referme.fyi (deprecated)</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Web application to connect applicants with employees at companies</Text>
             </Flex>
             <Text color={color} mb={3.5} mt={5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>web sockets</Text>
             <Flex mb={3.5} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Plexy.fun</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/plexy.fun" isExternal>Plexy.fun</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Real-time collaborative pixel canvas</Text>
             </Flex>
             <Flex mb={8} direction='row'>
-              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}>TCP Wall Server</Text>
+              <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/TCP-Wall-Server" isExternal>TCP Wall Server</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Message board</Text>
             </Flex>
           </Flex>
           <Flex id="exp" flexDirection="column">
             <Flex mb={3.5}  mt={10}>
-              <Text color={color} borderBottom="3px solid" style={{fontFamily: 'Barlow'}} fontSize="24px" fontWeight="600" lineHeight="36px">experience</Text>
+              <Text color={color} borderBottom="3px solid" style={{fontFamily: 'Barlow'}} fontSize="24px" fontWeight="600" lineHeight="36px">manuscripts</Text>
             </Flex>
             <Flex direction="column">
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Barlow', textDecoration: 'underline'}}>Amazon - Software Engineer Intern</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={300}>May 2023 - August 2023 | Seattle, WA</Text>
-              <Text color={color} mt={3} mb={6} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}>Worked on developed</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Barlow'}}>GStatSim V1.0: a Python package for geostatistical interpolation and simulation.</Text>
+              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang (in review)</Text>
+              <Text color={color} mt={3} mb={3} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}></Text>
             </Flex>
             <Flex direction="column">
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Barlow', textDecoration: 'underline'}}>Datadog - Software Engineer Intern</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={300}>January 2023 - April 2023 | New York, NY</Text>
-              <Text color={color} mt={3} mb={6} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}>Implemented a Parser for metric queries with Greedy token parsing using PegJS that feeds input into an Abstract Syntax Tree for query syntax highlighting on the search bar UI. Developed Data Visualization components for Time Series graphs using D3 and WebGL Developed Data Visualization components for Time Series graphs using D3 and WebGL. Wrote 100+ JUnit tests for Developed Data Visualization components for Time Series graphs using D3 and WebGL Developed Data Visualization components for Time Series graphs using D3 and WebGL.</Text>
-            </Flex>
-            <Flex direction="column">
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Barlow', textDecoration: 'underline'}}>Target - Software Engineer Intern</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={300}>June 2022 - August 2022 | Minneapolis, MN</Text>
-              <Text color={color} mt={3} mb={6} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}>Worked on RESTful web services using Kafka data streaming pipelines for processing real-time store transaction data. Utilized Java with Spring Boot to develop a Microservice for tracking and correcting transaction event anomalies. Designed an internal transaction-ledger tool using React and TypeScript, reducing the number of stores-inventory support tickets by 74\% and populated the ledger using a GraphQL API.</Text>
-            </Flex>
-            <Flex direction="column">
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Barlow', textDecoration: 'underline'}}>University of Florida - Research Assistant</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={300}>October 2021 - December 2023 | Gainesville, FL</Text>
-              <Text color={color} mt={3} mb={8} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}>Contributed Python methods to an open source high performance computing software package for stochastic simulations of subglacial topography to improve ice sheet models and sea level rise projections. Implemented a vectorized quadrantal kNN algorithm for Sequential Gaussian Simulation using NumPy/Pandas. Worked with NVIDIA AI Staff to optimize software for GPU parallelization using CUDA (CuPy, cuDF) programming, decreasing memory usage and benchmark runtimes by 30x for large dataset scalability.</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Barlow'}}>Accelerating Simulation for Subglacial Topographic Modeling & Uncertainty Quantification.</Text>
+              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={300}>N. Schoedl, E.J. MacKie, M. Field, E. Stubbs, A. Zhang, M. Hibbs, M. Gravey (in review)</Text>
+              <Text color={color} mt={3} mb={6} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}></Text>
             </Flex>
           </Flex>
+          
           <Flex id="getInTouch" flexDirection="column">
             <Flex mb={3.5}  mt={10}>
               <Text color={color} borderBottom="3px solid" style={{fontFamily: 'Barlow'}} fontSize="24px" fontWeight="600" lineHeight="36px">get in touch</Text>
             </Flex>
-            <Text color={color} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={400}>Send me an <Text _hover={{cursor: 'pointer'}} onClick={() => {}} as="span" textDecoration="underline">Email</Text>, connect with me on <Text _hover={{cursor: 'pointer'}} as="span" textDecoration="underline">LinkedIn</Text>, or check out my code on <Text _hover={{cursor: 'pointer'}} onClick={() => {}} as="span" textDecoration="underline">Github.</Text></Text>
+            <Text color={color} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={400}>Send me an <Text _hover={{cursor: 'pointer'}} as="span" textDecoration="underline"><Link href="mailto: hibbs.matthew@protonmail.com">Email</Link></Text>, connect with me on <Text _hover={{cursor: 'pointer'}} as="span" textDecoration="underline"><Link href="https://www.linkedin.com/in/matthibbs/" isExternal>LinkedIn</Link></Text>, or check out my code on <Text _hover={{cursor: 'pointer'}} as="span" textDecoration="underline"><Link href="https://github.com/matthibbs7" isExternal>Github.</Link></Text></Text>
           </Flex>
           <Flex justifyContent="center" mt={10}>
             <Text color={color} style={{fontFamily: 'Barlow'}} fontSize="16px" fontWeight={300}>© 2023 Matthew Hibbs</Text>
