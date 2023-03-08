@@ -5,14 +5,14 @@ import Magic from '@/components/Magic';
 import { useState } from 'react';
 
 export default function Home() {
-  const [shades, setShades] = useState(true);
+  const [shades, setShades] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode()
   const bg = useColorModeValue('white', '#1A202C')
   const color = useColorModeValue('black', '#EDF2F6')
   return (
     <>
       <Head>
-        <title>Matthew Hibbs</title>
+        <title>Matt Hibbs</title>
         <meta name='description' content='I hope this tutorial is helpful for you' />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,11 +29,12 @@ export default function Home() {
           </Flex>
           <Flex mt={[2,4,4,
         4]} flexDirection="column" align="center" justifyContent="center">
-            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontWeight={700} fontStyle="bold">matt hibbs</Text>
+            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontWeight={700} fontStyle="bold">matthew hibbs</Text>
             <Image mt={5} height="200px" width="200px" src={shades ? "/images/matt6.png" : "/images/matt2.png"} />
           </Flex>
           <Flex mb={5}  mt={7} flexDirection="column">
-            <Text color={color} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">I&apos;m a software engineer based in New York. I read <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>36 books</Text> every year. Check out some of my <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>open source projects</Text>, which have won Hackathons and led to academic <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>co-authorships</Text>.</Text>
+            <Text color={color} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">I&apos;m a software engineer based in New York. I read <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>36 books</Text> every year. Check out some of my <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>open source projects</Text>, which have won competitions and led to academic <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>co-authorships</Text>.</Text>
+            <Text color={color} mt={5} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">My proficiencies include building frontend interfaces, high performance computing, web development, and systems programming.</Text>
             {/* <Text color={color} mt={5} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">My proficiencies include object-oriented programming languages such as C++, Python, and TypeScript. Additionally, I&apos;ve dabbled in different domains of knowledge from building query parsers, CUDA programming, implementing web sockets, to exploring various statistical methods.</Text> */}
             {/* <Flex flexWrap="wrap">
               <Text fontSize="11.5pt" _hover={{textDecoration: 'underline', cursor: 'pointer'}} fontWeight={700} mr={1}>Portfolio</Text>
@@ -80,7 +81,7 @@ export default function Home() {
             <Flex direction='row'>
               <Text color={color} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://pypi.org/project/gstatsim/" isExternal>GStatSim</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Open Source Python package for geostatistical simulation and interpolation</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">PyPi package for geostatistical simulation and interpolation</Text>
             </Flex>
             <UnorderedList mt={1}>
               <ListItem color={color} ml={8} style={{fontFamily: 'Barlow', textDecoration: 'none'}} fontSize="16px" lineHeight="24px" fontWeight={600} mb={3.5}>10,000+ downloads</ListItem>
