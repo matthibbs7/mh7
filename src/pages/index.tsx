@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Divider, Flex, Text, Image, UnorderedList, ListItem, useColorMode, useColorModeValue, Link } from '@chakra-ui/react';
-import { FaMagic } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 import Magic from '@/components/Magic';
 import { useState } from 'react';
 
@@ -29,12 +29,15 @@ export default function Home() {
           </Flex>
           <Flex mt={[2,4,4,
         4]} flexDirection="column" align="center" justifyContent="center">
-            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontWeight={700} fontStyle="bold">matthew hibbs</Text>
+            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontWeight={700} fontStyle="bold">matt hibbs</Text>
+            
             <Image mt={5} height="200px" width="200px" src={shades ? "/images/matt6.png" : "/images/matt2.png"} />
+            
           </Flex>
           <Flex mb={5}  mt={7} flexDirection="column">
             <Text color={color} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">I&apos;m a software engineer based in New York. I read <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>36 books</Text> every year. Check out some of my <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>open source projects</Text>, which have won competitions and led to academic <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>co-authorships</Text>.</Text>
-            <Text color={color} mt={5} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">My proficiencies include building frontend interfaces, high performance computing, web development, and systems programming.</Text>
+            <Text color={color} mt={5} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">My <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span">proficiencies</Text> include building frontend interfaces, high performance computing, web development, and systems programming.</Text>
+            <Text mt={5} textAlign="center" color={color} style={{fontFamily: 'Barlow'}} fontWeight={700}><Link>CV</Link> | <Link href="https://github.com/matthibbs7" isExternal>GitHub</Link> | <Link href="mailto: hibbs.matthew@protonmail.com">Email</Link></Text>
             {/* <Text color={color} mt={5} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">My proficiencies include object-oriented programming languages such as C++, Python, and TypeScript. Additionally, I&apos;ve dabbled in different domains of knowledge from building query parsers, CUDA programming, implementing web sockets, to exploring various statistical methods.</Text> */}
             {/* <Flex flexWrap="wrap">
               <Text fontSize="11.5pt" _hover={{textDecoration: 'underline', cursor: 'pointer'}} fontWeight={700} mr={1}>Portfolio</Text>
