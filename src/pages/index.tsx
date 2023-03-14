@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Matt Hibbs</title>
+        <title>Matt Hibbs | Home</title>
         <meta name='description' content='I hope this tutorial is helpful for you' />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -57,6 +57,7 @@ export default function Home() {
             </Flex>
             <Text color={color} mb={3.5} style={{fontFamily: 'Poppins'}} fontSize="14px" lineHeight="24px" fontWeight={700}>machine learning</Text>
             <Flex mb={3.5} direction='row'>
+                
               <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/plehman2000/Sherlock" isExternal>Sherlock</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow', textDecoration: 'none'}} textDecoration="none" as="span" fontStyle="italic"> Video analysis using OpenAI and SpaCy</Text>
@@ -110,7 +111,7 @@ export default function Home() {
             <Flex mb={3.5} direction='row'>
               <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/plexy.fun" isExternal>Plexy.fun</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Real-time collaborative pixel canvas</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Real-time collaborative pixel canvas inspired by r/place</Text>
             </Flex>
             <Flex mb={8} direction='row'>
               <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/TCP-Wall-Server" isExternal>TCP Wall Server</Link></Text>
