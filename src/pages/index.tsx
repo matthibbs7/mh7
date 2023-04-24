@@ -22,8 +22,7 @@ export default function Home() {
       <Flex justifyContent="center" bg={bg}>
         <Flex mb={10} px={[3, 4, 6, 8]} py={[2,2,4,4]} width=
         {["94%","90%"]} maxWidth="724px" flexDirection="column">
-          <Flex ml="auto">
-          </Flex>
+          
           <Flex mt={[2,4,8,
         12]} flexDirection="column" align="center" justifyContent="center">
             <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontWeight={700} fontStyle="bold">matt hibbs</Text>
