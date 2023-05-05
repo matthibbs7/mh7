@@ -25,7 +25,7 @@ export default function Home() {
           
           <Flex mt={[2,4,8,
         12]} flexDirection="column" align="center" justifyContent="center">
-            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontWeight={700} fontStyle="bold">matt hibbs</Text>
+            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontStyle="bold" fontWeight='bold'>matt hibbs</Text>
             
             <Image mt={3} height="210px" width="210px" src={shades ? "/images/matt6.png" : "/images/test70.png"} />
             
@@ -96,10 +96,21 @@ export default function Home() {
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Real-time collaborative pixel canvas inspired by r/place</Text>
             </Flex>
-            <Flex mb={8} direction='row'>
+            <Flex mb={3.5} direction='row'>
               <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/TCP-Wall-Server" isExternal>TCP Wall Server</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Message board</Text>
+            </Flex>
+            <Text color={color} mb={3.5} mt={5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>C++</Text>
+            <Flex mb={3.5} direction='row'>
+              <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.youtube.com/watch?v=HbPUxW4rno0" isExternal>Spotify Beatmap Downloader</Link></Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Import a playlist to mass download OSU! beatmaps</Text>
+            </Flex>
+            <Flex mb={8} direction='row'>
+              <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/WAD-File-Reader-with-FUSE" isExternal>.wad File Reader</Link></Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> with FUSE / N-ary Tree implementation</Text>
             </Flex>
           </Flex>
           <Flex id="exp" flexDirection="column">
