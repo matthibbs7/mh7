@@ -25,10 +25,8 @@ export default function Home() {
           
           <Flex mt={[2,4,8,
         12]} flexDirection="column" align="center" justifyContent="center">
-            <Text color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px" fontStyle="bold" fontWeight='bold'>matt hibbs</Text>
-            
+            <Text sx={{ "-webkit-text-stroke": '1px black' }} color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px">matt hibbs</Text>
             <Image mt={3} height="210px" width="210px" src={shades ? "/images/matt6.png" : "/images/test70.png"} />
-            
           </Flex>
           <Flex mb={5}  mt={7} flexDirection="column">
             <Text color={color} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">I&apos;m a software engineer based in New York. I read <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>36 books</Text> every year. Check out some of my <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>open source projects</Text>, which have won competitions and led to academic <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>co-authorships</Text>.</Text>
