@@ -109,11 +109,18 @@ export default function Home() {
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Import a playlist to mass download OSU! beatmaps</Text>
             </Flex>
-            <Flex mb={8} direction='row'>
+            <Flex mb={3.5} direction='row'>
               <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/WAD-File-Reader-with-FUSE" isExternal>.wad File Reader</Link></Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> with FUSE / N-ary Tree implementation</Text>
             </Flex>
+            <Text color={color} mb={3.5} mt={5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>in development</Text>
+            <Flex mb={8} direction='row'>
+              <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Rollsolid.com</Link></Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Tooling for advanced Poker theory</Text>
+            </Flex>
+            
           </Flex>
           <Flex id="exp" flexDirection="column">
             <Flex mb={3.5}  mt={10}>
