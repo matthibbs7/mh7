@@ -11,6 +11,7 @@ import {
     IconButton,
     useColorModeValue,
     Button,
+    Divider,
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
   import { FaDev, FaGit, FaGitAlt, FaGithub, FaGithubSquare, FaGitSquare, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
@@ -61,8 +62,10 @@ import {
         bg={useColorModeValue('white', 'white')}
         color={useColorModeValue('gray.700', 'gray.200')}
         justifyContent='center'
+        mt={'-40px'}
         >
-        <Container as={Stack} width={["94%","90%"]} maxWidth="696px" py={10} mb={4} mt={'-60px'}>
+        <Divider />
+        <Container as={Stack} width={["94%","90%"]} maxWidth="696px" py={10} mb={4} >
           <SimpleGrid
             templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr' }}
             spacing='90px'>
