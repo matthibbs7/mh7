@@ -141,7 +141,7 @@ export default function Home() {
             </Flex>
             <Flex direction="column" mt={3}>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>GStatSim V1.0: a Python package for geostatistical interpolation and simulation.</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang (in review)</Text>
+              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang (in press)</Text>
               <Text color={color} mt={3} mb={3} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}></Text>
             </Flex>
             <Flex direction="column">
