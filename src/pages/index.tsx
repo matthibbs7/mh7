@@ -130,7 +130,7 @@ export default function Home() {
               <Flex mb={8} direction='row'>
                 <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Rollsolid.com</Link></Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
-                <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Tooling for advanced Poker theory</Text>
+                <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Customizable dashboard featuring Monte Carlo Simulations, Pot Odd ratios, and decision training for advanced Poker strategy</Text>
               </Flex>
             </Flex>
             
@@ -141,13 +141,13 @@ export default function Home() {
             </Flex>
             <Flex direction="column" mt={3}>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>GStatSim V1.0: a Python package for geostatistical interpolation and simulation.</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang (in press)</Text>
-              <Text color={color} mt={3} mb={3} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}></Text>
+              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang (in press).</Text>
+              <Text fontStyle='italic' color={color} mb={5} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Geoscientific Model Development</Text>
             </Flex>
             <Flex direction="column">
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>Accelerating Simulation for Subglacial Topographic Modeling & Uncertainty Quantification.</Text>
               <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>N. Schoedl, E.J. MacKie, M. Field, E. Stubbs, A. Zhang, M. Hibbs, M. Gravey (in review)</Text>
-              <Text color={color} mt={3} mb={6} fontSize="16px" lineHeight="24px" style={{fontFamily: 'Barlow'}} fontWeight={400}></Text>
+              <Text fontStyle='italic' color={color} mb={7} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Computing in Science and Engineering</Text>
             </Flex>
           </Flex>
       
