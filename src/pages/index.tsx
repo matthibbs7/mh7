@@ -126,16 +126,16 @@ export default function Home() {
             </Flex>
             <Flex boxShadow='5px 6px 5px gray' mt={5} borderRadius={6} p={4} bg='teal.100' flexDirection='column'>
               <Text color={color} mb={3.5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>in development</Text>
-              <Flex mb={3.5} direction='row'>
+              <Flex mb={8} direction='row'>
                 <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Rollsolid.com</Link></Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Customizable dashboard featuring Monte Carlo Simulations, Pot Odd ratios, and decision training for advanced Poker strategy</Text>
               </Flex>
-              <Flex mb={8} direction='row'>
+              {/* <Flex mb={8} direction='row'>
                 <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Demogorgn.ai</Link></Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Web application to allow researchers to generate realizations of Greenland topography</Text>
-              </Flex>
+              </Flex> */}
             </Flex>
             
           </Flex>
