@@ -28,7 +28,7 @@ export default function Home() {
           
           <Flex mt={[2,4,8,
         12]} flexDirection="column" align="center" justifyContent="center">
-            <Text sx={{ "-webkit-text-stroke": '1px black' }} color={color} style={{fontFamily: 'Indie Flower'}} fontSize="32px">matt hibbs</Text>
+            <Text sx={{ "-webkit-text-stroke": '1px black' }} color={color} style={{fontFamily: 'Indie Flower'}} fontSize="34px">matt hibbs</Text>
             <Image mt={3} height="210px" width="210px" src={shades ? "/images/matt6.png" : "/images/test70.png"} />
           </Flex>
           <Flex borderRadius={6} p={[0, 0, 3, 3]} py={[0, 0, 4, 4]} bg='white' mb={5}  mt={7} flexDirection="column">
@@ -93,9 +93,9 @@ export default function Home() {
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Website for simulating Greenland topography for geophysics researchers</Text>
               </Flex> */}
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Referme.fyi" isExternal>Referme.fyi</Link></Text>
+                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://timeblend.fyi" isExternal>Timeblend.fyi</Link></Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
-                <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Web application to connect applicants with employees at companies</Text>
+                <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Modern scheduling tool for coordinating large team collaborations</Text>
               </Flex>
             </Flex>
             <Flex boxShadow='5px 6px 5px gray' mt={5} borderRadius={6} p={4} bg='purple.100' flexDirection='column'>
@@ -145,13 +145,15 @@ export default function Home() {
             </Flex>
             <Flex direction="column" mt={3}>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>GStatSim V1.0: a Python package for geostatistical interpolation and simulation.</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang (in press).</Text>
-              <Text fontStyle='italic' color={color} mb={5} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Geoscientific Model Development</Text>
+              <Text fontStyle='italic' color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Geoscientific Model Development (2023)</Text>
+              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang.</Text>
+              
+              <Text _hover={{cursor: 'pointer', textDecoration: 'underline'}} color='blue.300' mb={5} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={600}><Link href="https://gmd.copernicus.org/articles/16/3765/2023" isExternal>https://gmd.copernicus.org/articles/16/3765/2023</Link></Text>
             </Flex>
             <Flex direction="column">
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>Accelerating Simulation for Subglacial Topographic Modeling & Uncertainty Quantification.</Text>
               <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>N. Schoedl, E.J. MacKie, M. Field, E. Stubbs, A. Zhang, M. Hibbs, M. Gravey (in review)</Text>
-              <Text fontStyle='italic' color={color} mb={7} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Computing in Science and Engineering</Text>
+              <Text fontStyle='italic' color={color} mb={7} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Submitted to Computing in Science and Engineering</Text>
             </Flex>
           </Flex>
       
