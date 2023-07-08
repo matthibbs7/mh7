@@ -129,7 +129,7 @@ export default function Home() {
               <Flex mb={8} direction='row'>
                 <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Rollsolid.com</Link></Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
-                <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Customizable dashboard featuring Monte Carlo Simulations, Pot Odd ratios, and decision training for advanced Poker strategy</Text>
+                <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Data-based tools for Texas Holdem Poker featuring Monte Carlo simulations of dynamic game states, Odd ratio calculators, time series analysis, etc</Text>
               </Flex>
               {/* <Flex mb={8} direction='row'>
                 <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Demogorgn.ai</Link></Text>
