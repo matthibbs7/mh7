@@ -1,0 +1,10 @@
+::selection {
+    background: #ffc273;
+    color: black;
+}
+
+html {
+    cursor: url("/images/default.png"), auto;
+}
+
+    /* color: black; */

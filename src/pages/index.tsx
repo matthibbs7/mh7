@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import { Divider, Flex, Text, Image, UnorderedList, ListItem, useColorMode, useColorModeValue, Link, Button, Box, useMediaQuery } from '@chakra-ui/react';
+import { Divider, Flex, Text, Image, UnorderedList, ListItem, useColorMode, useColorModeValue, Link, Button, Box, useMediaQuery, transition } from '@chakra-ui/react';
 import { useState } from 'react';
+import cursorImage from "../../public/images/bg.png";
 
 export default function Home() {
   const [shades, setShades] = useState(false);
@@ -28,11 +29,11 @@ export default function Home() {
           
           <Flex mt={[2,4,8,
         12]} flexDirection="column" align="center" justifyContent="center">
-            <Text sx={{ "-webkit-text-stroke": '1px black' }} color={color} style={{fontFamily: 'Indie Flower'}} fontSize="34px">matt hibbs</Text>
-            <Image mt={3} height="210px" width="210px" src={shades ? "/images/matt6.png" : "/images/test70.png"} />
+            <Text sx={{ "-webkit-text-stroke": '1px black' }} _hover={{cursor: `url("/images/pointer.png"), auto`}} color={color} style={{fontFamily: 'Indie Flower'}} fontSize="34px">matt hibbs</Text>
+            <Image mt={3} height="210px" width="210px" src={shades ? "/images/matt6.png" : "/images/test70.jpg"} />
           </Flex>
           <Flex borderRadius={6} p={[0, 0, 3, 3]} py={[0, 0, 4, 4]} bg='white' mb={5}  mt={7} flexDirection="column">
-            <Text color={color} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">Hi there, I&apos;m a software engineer based in New York City. Check out some of my <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>open source projects</Text>, which have won competitions and led to academic <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: 'pointer'}}>co-authorships</Text>.</Text>
+            <Text color={color} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">Hi there, I&apos;m a software engineer based in New York City. Check out some of my <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: `url("/images/pointer.png"), auto`}}>open source projects</Text>, which have won competitions and led to academic <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span" _hover={{cursor: `url("/images/pointer.png"), auto`}}>co-authorships</Text>.</Text>
             <Text color={color} mt={5} textAlign="center" style={{fontFamily: 'Barlow'}} fontSize="19.5px" fontWeight="600" lineHeight="28px">My <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span">proficiencies</Text> include building frontend interfaces, high performance computing, web development, and systems programming. I enjoy cooking, working out, and <Text fontSize="19.5px" fontWeight="600" lineHeight="28px" borderBottom="3px solid" as="span">poker</Text> in my free time.</Text>
           </Flex>
           <Flex  id="portfolio" flexDirection="column">
@@ -43,28 +44,28 @@ export default function Home() {
               <Text color={color} mb={3.5} style={{fontFamily: 'Poppins'}} fontSize="14px" lineHeight="24px" fontWeight={700}>machine learning</Text>
               <Flex mb={3.5} direction='row'>
                   
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/plehman2000/Sherlock" isExternal>Sherlock</Link></Text>
+                <Text onClick={() => window.open("https://github.com/plehman2000/Sherlock", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Sherlock</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow', textDecoration: 'none'}} textDecoration="none" as="span" fontStyle="italic"> Video analysis using OpenAI and SpaCy</Text>
               </Flex>
             
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/plehman2000/Sabu" isExternal>Sabu.ai</Link></Text>
+                <Text onClick={() => window.open("https://github.com/plehman2000/Sabu", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Sabu.ai</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} as="span" fontStyle="italic"> Twitter sentiment analysis aggregator using BERT transformers</Text>
               </Flex>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Haikai-IOS" isExternal>Haikai</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/Haikai-IOS", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Haikai</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Natural language generation of Haiku poems from images</Text>
               </Flex>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/educatus" isExternal>Educatus</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/educatus", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Educatus</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Customizable AI powered dashboard for students</Text>
               </Flex>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/aulos" isExternal>Aulos</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/aulos", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Aulos</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Watch brand classification using Azure and Computer Vision</Text>
               </Flex>
@@ -72,7 +73,7 @@ export default function Home() {
             <Flex boxShadow='5px 6px 5px gray' mt={5} borderRadius={6} p={4} bg='red.100' flexDirection='column'>
               <Text color={color} mb={3.5}  style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>statistics</Text>
               <Flex direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://pypi.org/project/gstatsim/" isExternal>GStatSim</Link></Text>
+                <Text onClick={() => window.open("https://pypi.org/project/gstatsim/", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>GStatSim</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">PyPi package for geostatistical simulation and interpolation</Text>
               </Flex>
@@ -80,7 +81,7 @@ export default function Home() {
                 <ListItem color={color} ml={8} style={{fontFamily: 'Barlow', textDecoration: 'underline'}} fontSize="16px" lineHeight="24px" fontWeight={600} mb={3.5}>10,000+ downloads</ListItem>
               </UnorderedList>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/Data-Science" isExternal>Data Science etc</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/Data-Science", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Data Science etc</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Various analysis&apos;</Text>
               </Flex>
@@ -93,7 +94,7 @@ export default function Home() {
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Website for simulating Greenland topography for geophysics researchers</Text>
               </Flex> */}
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://timeblend.fyi" isExternal>Timeblend.fyi</Link></Text>
+                <Text onClick={() => window.open("https://timeblend.fyi", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Timeblend.fyi</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Modern scheduling tool for coordinating large team collaborations</Text>
               </Flex>
@@ -101,12 +102,12 @@ export default function Home() {
             <Flex boxShadow='5px 6px 5px gray' mt={5} borderRadius={6} p={4} bg='purple.100' flexDirection='column'>
               <Text color={color} mb={3.5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>web sockets</Text>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/plexy.fun" isExternal>Plexy.fun</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/plexy.fun", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Plexy.fun</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Real-time collaborative pixel canvas inspired by r/place</Text>
               </Flex>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/TCP-Wall-Server" isExternal>TCP Wall Server</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/TCP-Wall-Server", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>TCP Wall Server</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> Message board</Text>
               </Flex>
@@ -114,12 +115,12 @@ export default function Home() {
             <Flex boxShadow='5px 6px 5px gray' mt={5} borderRadius={6} p={4} bg='orange.100' flexDirection='column'>
               <Text color={color} mb={3.5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>c++</Text>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.youtube.com/watch?v=HbPUxW4rno0" isExternal>Spotify Beatmap Downloader</Link></Text>
+                <Text onClick={() => window.open("https://www.youtube.com/watch?v=HbPUxW4rno0", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Spotify Beatmap Downloader</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Import a playlist to mass download OSU! beatmaps</Text>
               </Flex>
               <Flex mb={3.5} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://github.com/matthibbs7/WAD-File-Reader-with-FUSE" isExternal>.wad File Reader</Link></Text>
+                <Text onClick={() => window.open("https://github.com/matthibbs7/WAD-File-Reader-with-FUSE", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>.wad File Reader</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic"> with FUSE / N-ary Tree implementation</Text>
               </Flex>
@@ -127,7 +128,7 @@ export default function Home() {
             <Flex boxShadow='5px 6px 5px gray' mt={5} borderRadius={6} p={4} bg='teal.100' flexDirection='column'>
               <Text color={color} mb={3.5} style={{fontFamily: 'Barlow'}} fontSize="16px" lineHeight="24px" fontWeight={700}>in development</Text>
               <Flex mb={8} direction='row'>
-                <Text color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}><Link href="https://www.rollsolid.com" isExternal>Rollsolid.com</Link></Text>
+                <Text onClick={() => window.open("https://www.rollsolid.com", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color={color} style={{fontFamily: 'Poppins'}} fontSize="16px" lineHeight="24px" fontWeight={500}>Rollsolid.com</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={400} style={{textDecoration: 'none'}} textDecoration="none" as="span">,&nbsp;</Text>
                 <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={500} style={{fontFamily: 'Barlow'}} textDecoration="none" as="span" fontStyle="italic">Data-based tools for Texas Holdem Poker featuring Monte Carlo simulations of dynamic game states, Odd ratio calculators, time series analysis, etc</Text>
               </Flex>
@@ -141,18 +142,18 @@ export default function Home() {
           </Flex>
           <Flex id="exp" flexDirection="column">
             <Flex mb={3.5}  mt={10}>
-              <Text color={color} borderBottom="3px solid" style={{fontFamily: 'Barlow'}} fontSize="22px" fontWeight="600" lineHeight="33px">manuscripts</Text>
+              <Text color={color} borderBottom="3px solid" style={{fontFamily: 'Barlow'}} fontSize="22px" fontWeight="600" lineHeight="33px">publications</Text>
             </Flex>
             <Flex direction="column" mt={3}>
               <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>GStatSim V1.0: a Python package for geostatistical interpolation and simulation.</Text>
               <Text fontStyle='italic' color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Geoscientific Model Development (2023)</Text>
               <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>E.J. MacKie, M. Field, L. Wang, Z. Yin, N. Schoedl, M. Hibbs, A. Zhang.</Text>
               
-              <Text _hover={{cursor: 'pointer', textDecoration: 'underline'}} color='blue.300' mb={5} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={600}><Link href="https://gmd.copernicus.org/articles/16/3765/2023" isExternal>https://gmd.copernicus.org/articles/16/3765/2023</Link></Text>
+              <Text onClick={() => window.open("https://gmd.copernicus.org/articles/16/3765/2023", '_blank')} _hover={{cursor: `url("/images/pointer.png"), auto`, textDecoration: 'underline'}} color='blue.300' mb={5} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={600}>https://gmd.copernicus.org/articles/16/3765/2023</Text>
             </Flex>
             <Flex direction="column">
-              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>Accelerating Simulation for Subglacial Topographic Modeling & Uncertainty Quantification.</Text>
-              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>N. Schoedl, E.J. MacKie, M. Field, E. Stubbs, A. Zhang, M. Hibbs, M. Gravey (in review)</Text>
+              <Text color={color} fontSize="16px" lineHeight="24px" fontWeight={600} style={{fontFamily: 'Poppins'}}>A Python multiprocessing approach for fast geostatical simulations of subglacial topography.</Text>
+              <Text color={color} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>N. Schoedl, E.J. MacKie, M. Field, E. Stubbs, A. Zhang, M. Hibbs, M. Gravey (in press)</Text>
               <Text fontStyle='italic' color={color} mb={7} fontSize="14px" lineHeight="24px" style={{fontFamily: 'Poppins'}} fontWeight={300}>Submitted to Computing in Science and Engineering</Text>
             </Flex>
           </Flex>

@@ -64,7 +64,7 @@ import {
         justifyContent='center'
         mt={'-40px'}
         >
-        <Divider borderColor='gray.200' />
+        {/* <Divider borderColor='gray.200' /> */}
         <Container as={Stack} width={["94%","90%"]} maxWidth="696px" py={10} mb={4} >
           <SimpleGrid
             templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr' }}
