@@ -75,7 +75,7 @@ import {
               </Box>
               {/* <Text fontSize='15px'>Contact</Text> */}
               <Text fontSize='15px' color='#999'>
-                15696 Portico Drive, Wayzata, MN 55391
+                New York, New York
               </Text>
               <Stack direction={'row'} spacing={6}>
                 <Button onClick={() => window.open('mailto:hibbs.matthew@protonmail.com')} height='36px' fontSize='15px' color='#2f2f2f' bgColor='rgb(33, 33, 33, 0.07)' borderRadius='8px'>Email Me</Button>
